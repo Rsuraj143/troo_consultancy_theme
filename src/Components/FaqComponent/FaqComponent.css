@@ -1,0 +1,178 @@
+#troo-da-faqs-section {
+    position: relative;
+}
+.pot {
+    z-index: -9;
+    top: -9%;
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 10s;
+}
+@keyframes run{
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 5%;
+    }
+    100% {
+        left: 0;
+    }
+}
+#troo-da-faqs-section .vid-fig {
+    bottom: 0px;
+    right: 15%;
+    position: absolute;
+    z-index: 9;
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
+}
+@keyframes action{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+#troo-da-faqs-section .zoom-in-zoom-out {
+    right: 43%;
+    left: inherit;
+    top: 23%;
+}
+#troo-da-faqs-section .vert-move img {
+    width: 100%;
+    max-width: 479px;
+    float: right;
+    padding-top: 50px;
+}
+#troo-da-faqs-section .vid-fig {
+    bottom: 0px;
+    right: 15%;
+    position: absolute;
+    z-index: 9;
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
+}
+@keyframes action{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+#troo-da-faqs-section .sub-title {
+    text-align: left;
+}
+#troo-da-faqs-section .case-text {
+    padding-left: 96px;
+}
+#troo-da-faqs-section .case-btn {
+    float: right;
+}
+div#accordionExample {
+    padding-top: 50px;
+}
+.accordion-item {
+    border: none !important;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgb(149 157 165 / 20%);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FD7702 !important;
+    margin-bottom: 0;
+}
+button.accordion-button {
+    background: #FFFFFF !important;
+    border-radius: 8px !important;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #002347 !important;
+}
+div#accordionExample .accordion-header .accordion-button:not(.collapsed)::after {
+    flex-shrink: 0 !important;
+    width: 25px !important;
+    height: 25px !important;
+    margin-left: auto !important;
+    content: "" !important;
+    background-image: url(../../Images/acc-bottom.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 47% !important;
+    transition: transform .2s ease-in-out !important;
+    background-position: 53% 54% !important;
+    transition: transform .2s ease-in-out !important;
+    background-color: #FD7702 !important;
+    box-shadow: 0px 8px 24px rgb(149 157 165 / 20%) !important;
+    border-radius: 8px !important;
+}
+div#accordionExample .accordion-header .accordion-button::after {
+    flex-shrink: 0 !important;
+    width: 25px !important;
+    height: 25px !important;
+    margin-left: auto !important;
+    content: "" !important;
+    background-image: url(../../Images/acc-top.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 47% !important;
+    transition: transform .2s ease-in-out !important;
+    background-position: 53% 54% !important;
+    transition: transform .2s ease-in-out !important;
+    background-color: #002347 !important;
+    box-shadow: 0px 8px 24px rgb(149 157 165 / 20%) !important;
+    border-radius: 8px !important;
+}
+.accordion-body {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #777777;
+    margin-bottom: 30px;
+    border-top: 1px solid #E8F3FF;
+    box-shadow: 0px 2px 7px rgb(100 100 111 / 5%);
+    padding: 15px 0 15px 0!important;
+    margin: 0 20px;
+}
+#troo-da-faqs-section .zoom-in-zoom-out {
+    right: 43%;
+    left: inherit;
+    top: 23%;
+}
+#troo-da-faqs-section .vert-move img {
+    width: 100%;
+    max-width: 479px;
+    float: right;
+    padding-top: 50px;
+}
+#troo-da-faqs-section .vid-fig {
+    bottom: 0px;
+    right: 15%;
+    position: absolute;
+    z-index: 9;
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
+}
+@keyframes action{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}

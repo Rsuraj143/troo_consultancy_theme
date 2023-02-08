@@ -1,0 +1,86 @@
+#troo-da-counter-section {
+    background-image: url(../../Images/counter-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 9;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#troo-da-counter-section:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #002347;
+    opacity: 0.9;
+    content: "";
+    z-index: -9;
+}
+#troo-da-counter-section .sub-title .text-sub {
+    color: #fff;
+}
+#troo-da-counter-section .sub-title img.up {
+    filter: brightness(0) invert(1);
+}
+#troo-da-counter-section .sub-title span {
+    color: #fff;
+}
+.counter-box {
+    background: #FFFFFF;
+    box-shadow: 0px 7px 29px rgb(253 119 2 / 29%);
+    border-radius: 8px;
+    padding: 37px 29px;
+    margin-top: 50px;
+    display: flex;
+    cursor: pointer;
+}
+.img-conter {
+    margin-right: 16px;
+}
+img.hover-img {
+    display: none;
+}
+.counter-box:hover img.normal-img {
+    display: none;
+}
+.counter-box:hover img.hover-img {
+    display: block;
+    transition: 0.5s;
+}
+.counter-box:hover span {
+    color: #FD7702 !important;
+}
+.con-text span.counter {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #002347;
+    transition: 0.5s;
+}
+.con-text p {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #777777;
+}
+.counter-box:hover strong {
+    color: #FD7702;
+}
+.con-text strong {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #002347;
+    transition: 0.5s;
+}

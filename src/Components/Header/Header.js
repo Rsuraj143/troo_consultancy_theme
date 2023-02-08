@@ -7,10 +7,9 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
-  FaTwitter,
 } from "react-icons/fa";
 import { TiSocialTwitter } from "react-icons/ti";
-import weblogo from "../../Images/Logo.png"
+import weblogo from "../../Images/Logo.png";
 
 const Header = () => {
   return (
@@ -69,7 +68,7 @@ const Header = () => {
             </div>
           </div>
           <nav className="navbar navbar-expand-lg">
-            <Link className="navbar-brand" to="/" >
+            <Link className="navbar-brand" to="/">
               <img src={weblogo} alt="weblogo" />
             </Link>
             {/* <button
@@ -88,7 +87,7 @@ const Header = () => {
             <div className="collapse navbar-collapse" id="navbarScroll">
               <ul className="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/" >
+                  <Link className="nav-link active" to="/">
                     Home
                   </Link>
                 </li>
@@ -108,7 +107,10 @@ const Header = () => {
                   >
                     Services
                   </Link>
-                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
                     <li>
                       <Link
                         className="dropdown-item"
@@ -146,7 +148,10 @@ const Header = () => {
                   >
                     Pages
                   </Link>
-                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
                     <li>
                       <Link className="dropdown-item" to="/case-studies">
                         Case Studies
@@ -195,7 +200,10 @@ const Header = () => {
                   >
                     Blogs
                   </Link>
-                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
                     <li>
                       <Link className="dropdown-item" to="/latest-blogs.html">
                         Latest Blogs

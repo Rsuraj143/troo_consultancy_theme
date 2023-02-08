@@ -1,0 +1,101 @@
+#troo-da-case-studies-section {
+    padding-top: 96px;
+    padding-bottom: 81px;
+}
+#troo-da-case-studies-section .sub-title {
+    text-align: left;
+    margin-bottom: 49px;
+}
+.case-text {
+    margin-left: -44px;
+}
+.case-btn .get-col a {
+    border: 1px solid #002347;
+    color: #002347;
+    float: none;
+}
+.case-btn .get-col a:hover {
+    border: 1px solid #FD7702;
+    color: #fff;
+}
+.project-colum {
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.project-colum img {
+    width: 100%;
+    border-radius: 8px;
+}
+.team-deatils {
+    max-width: 302px;
+    width: 100%;
+    padding-top: 0px;
+    height: 98px !important;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    position: absolute;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    top: -98px;
+    left: 0px;
+    margin: 300px auto 0 auto;
+    right: 0;
+    padding: 19px 31px 0 31px !important;
+    opacity: 0;
+    z-index: 99;
+    border-radius: 5px;
+}
+.project-colum:hover .team-deatils {
+    margin-top: 280px;
+    height: 111px;
+    padding-top: 10px;
+    opacity: 1;
+}
+.team-deatils p {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #777777;
+    margin-bottom: 9px;
+}
+.team-deatils span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FD7702;
+}
+.project-colum:hover:after {
+    display: block;
+}
+.project-colum:after {
+    position: absolute;
+    background: #002347;
+    opacity: 0.8;
+    box-shadow: 0px 7px 29px rgb(100 100 111 / 20%);
+    border-radius: 8px;
+    content: "";
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100%;
+    display: none;
+}
+.project-colum.mobile-hd {
+    margin-top: -90px;
+}
+.project-colum.work-hd {
+    margin-top: -30px;
+}

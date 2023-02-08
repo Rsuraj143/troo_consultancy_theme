@@ -1,0 +1,87 @@
+#troo-da-testimonial-section {
+    background-image: url(../../Images/BG.png);
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 173px;
+}
+#troo-da-testimonial-section .text-sub {
+    color: #fff;
+}
+#troo-da-testimonial-section .sub-title img.up {
+    filter: brightness(0) invert(1);
+}
+#troo-da-testimonial-section .title span {
+    color: #fff;
+}
+
+
+.testimonial-sub {
+    margin-top: -136px;
+    padding-bottom: 90px;
+}
+.test-client {
+    background: #FFFFFF;
+    padding: 25px 38px 27px 38px;
+    cursor: pointer;
+}
+.test-client:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 7px 29px rgb(100 100 111 / 20%);
+    border-radius: 8px;
+}
+.client-deatils {
+    display: flex;
+}
+.client-img {
+    transition: 0.5s;
+    background: #002347;
+    box-shadow: 0px 4px 8px -4px rgb(22 34 51 / 8%), 0px 16px 24px rgb(22 34 51 / 8%);
+    border-radius: 8px;
+    padding: 3px;
+    margin-right: 13px;
+}
+.test-client:hover .client-img {
+    background: #FD7702;
+}
+.client-img img {
+    border-radius: 8px;
+}
+.client-con strong {
+    transition: 0.5s;
+    padding-bottom: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #002347;
+    display: block;
+}
+.test-client:hover .client-con strong {
+    color: #FD7702;
+}
+.client-con span {
+    padding-bottom: 7px;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #002347;
+    display: block;
+}
+.client-con .fa_star {
+    font-size: 20px;
+    padding-right: 5px;
+    transition: 0.5s;
+}
+.test-client:hover .fa_star {
+    color: #FD7702;
+}
+.test-client p {
+    border-top: 1px solid rgba(253, 119, 2, 0.2);
+    margin-top: 29px;
+    padding-top: 25px;
+}
