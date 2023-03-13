@@ -1,6 +1,6 @@
 import React from "react";
 import "./TestimonialComponent.css";
-import { Link } from "react-router-dom";
+
 import sub_text_icon from "../../Images/gre-aa.png";
 import testi_img_1 from "../../Images/business-team.png"
 import testi_img_2 from "../../Images/hand-man.png"

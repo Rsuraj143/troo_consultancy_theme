@@ -1,0 +1,56 @@
+.about-page #troo-da-about-section {
+    padding: 100px 0 0px 0;
+}
+.about-page .galaxy {
+    position: absolute;
+    left: 15%;
+}
+#troo-da-sub-hero-section .cricle-one {
+    top: -71px;
+}
+.about-page .mercury {
+    z-index: 10;
+    width: 14px;
+    height: 14px;
+    background-color: rgb(253 119 2 / 30%);
+    position: absolute;
+    top: 0;
+    left: -84px;
+    border-radius: 50%;
+    animation: moving 9s infinite linear;
+    transform-origin: 0;
+    border: 0px solid rgb(253 119 2 / 30%);
+}
+
+@keyframes moving{
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+.about-page .vert-move.ab-ss {
+    right: 0;
+    position: absolute;
+}
+section#troo-da-about-section .vert-move img {
+    width: auto;
+}
+
+.about-page .vid-fig {
+    bottom: 15%;
+    left: 45%;
+    position: absolute;
+    z-index: 9;
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
+}
+@keyframes action{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+#troo-da-about-section .vert-move img {
+    width: auto ;
+}

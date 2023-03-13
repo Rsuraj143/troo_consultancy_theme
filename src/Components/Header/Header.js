@@ -3,13 +3,11 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { BiPhone } from "react-icons/bi";
 import { FiMail } from "react-icons/fi";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { TiSocialTwitter } from "react-icons/ti";
 import weblogo from "../../Images/Logo.png";
+import { MenuData } from "./MenuData";
+import Navmenu from "./Navmenu";
 
 const Header = () => {
   return (
@@ -85,7 +83,7 @@ const Header = () => {
               </span>
             </button> */}
             <div className="collapse navbar-collapse" id="navbarScroll">
-              <ul className="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+              {/* <ul className="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
                 <li className="nav-item">
                   <Link className="nav-link active" to="/">
                     Home
@@ -100,10 +98,6 @@ const Header = () => {
                   <Link
                     className="nav-link dropdown-toggle"
                     to="/service"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
                   >
                     Services
                   </Link>
@@ -205,12 +199,12 @@ const Header = () => {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <Link className="dropdown-item" to="/latest-blogs.html">
+                      <Link className="dropdown-item" to="/latest-blogs">
                         Latest Blogs
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="/blog-detail.html">
+                      <Link className="dropdown-item" to="/blog-detail">
                         Blog Detail
                       </Link>
                     </li>
@@ -221,7 +215,13 @@ const Header = () => {
                     Contact Us
                   </Link>
                 </li>
+              </ul> */}
+              <ul className="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+                {MenuData.map((item, index) => {
+                  return <Navmenu item={item} key={index} />;
+                })}
               </ul>
+
               <div className="get-col">
                 <Link to="/get-quote">get a quote</Link>
               </div>

@@ -126,10 +126,12 @@ a.nav-link.active:before {
   margin: 0 auto;
   display: block;
 }
+
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   position: absolute;
   min-width: 15rem;
 }
+
 a.dropdown-item {
   padding: 11px 12px;
   font-family: "Roboto";

@@ -49,6 +49,7 @@ const HeroComponent = () => {
               >
                 <img src={triangle} alt="triangle" /> <span>Watch video</span>
               </button>
+              {/* video section */}
               <div
                 class="modal fade"
                 id="staticBackdrop"
@@ -77,6 +78,7 @@ const HeroComponent = () => {
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
           <div class="col-md-6">
