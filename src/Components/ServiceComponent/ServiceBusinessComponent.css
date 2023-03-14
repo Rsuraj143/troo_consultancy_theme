@@ -1,0 +1,54 @@
+.consulting-services-pages-details #troo-da-services-section {
+    background-color: #fff;
+}
+.consulting-services-pages-details #troo-da-services-section .sub-title {
+    text-align: left;
+}
+.service-deil-text {
+    padding-top: 58px;
+}
+.service-deil-text h2 {
+    color: #002347;
+    margin-bottom: 25px;
+}
+.service-deil-text h3 {
+    color: #002347;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+#troo-da-service-benefits-section {
+    position: relative;
+}
+.box {
+    animation: animName 5s linear infinite;
+}
+@keyframes animName{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#troo-da-service-benefits-section .vid-fig {
+    bottom: 15%;
+    left: 51%;
+    position: absolute;
+    z-index: 9;
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
+}
+@keyframes action{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+.right-ss-im {
+    position: absolute;
+    top: -59px;
+    right: 15%;
+}

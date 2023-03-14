@@ -1,0 +1,51 @@
+#troo-da-services-section2 {
+    background-color: #fff;
+    padding-top: 93px;
+    padding-bottom: 100px;
+}
+#troo-da-services-section2 .sub-title {
+    text-align: left;
+}
+.ser-tt {
+    position: relative;
+    padding-right: 132px;
+    padding-top: 45px;
+}
+.ser-tt:after {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    right: 22%;
+    top: -10px;
+    background: #FD7702;
+    opacity: 0.1;
+    content: "";
+    border-radius: 101px;
+}
+
+.troo-da-services-section2 .service-col {
+    background: #fff;
+    box-shadow: 0px 7px 10px rgb(0 0 0 / 5%);
+    border-radius: 5px;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 30px;
+}
+.troo-da-services-section2 .service-col .col-md-6 {
+    padding: 0;
+}
+.troo-da-services-section2 .service-img img {
+    width: 100%;
+    border-radius: 8px;
+    padding: 20px;
+}
+.troo-da-services-section2 .services-colum {
+    margin-bottom: 0;
+    border: 0;
+    background: transparent;
+    padding: 77px 47px;
+}
+.troo-da-services-section2 .services-colum:hover {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0px;
+}

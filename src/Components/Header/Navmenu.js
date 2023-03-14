@@ -1,41 +1,53 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Header.css";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 
-const Navmenu = ({item}) => {
+const Navmenu = ({ item }) => {
   const [subnav, setSubnav] = useState(false);
 
   const showSubnav = () => setSubnav(!subnav);
+  console.log(!item?.subNav?.length, item?.subNav);
+
+  const navigate = useNavigate();
 
   return (
     <li className="nav-item">
-      <Link
-        className="nav-link"
-        to={item.path}
-        onClick={item.subNav && showSubnav}
-      >
-        <div style={{display:"inline-block"}}>{item.title}</div>
-        <div style={{ color: "white", display:"inline-block" }}>
-          {item.subNav && subnav
-            ? item.iconOpened
-            : item.subNav
-            ? item.iconClosed
-            : null}
-        </div>
-      </Link>
-      <ul className={subnav ? "dropdown-menu show" : "dropdown-menu "}>
-        {subnav &&
-          item.subNav.map((item, index) => {
-            return (
-              <li>
-                <Link className="dropdown-item" to={item.path} key={index}>
-                  {item.subTitle}
-                </Link>
-              </li>
-            );
-          })}
-      </ul>
+      {!item?.subNav?.length ? (
+        <NavLink
+          className="nav-link"
+          to={item.path}
+          onClick={item.subNav && showSubnav}
+          state={{ title: item.title }}
+        >
+          <div>{item.title}</div>
+          <div>
+            {item.subNav && subnav
+              ? item.iconOpened
+              : item.subNav
+              ? item.iconClosed
+              : null}
+          </div>
+        </NavLink>
+      ) : (
+        <>
+          <DropdownButton
+            className="nav-link test"
+            id="dropdown-basic-button"
+            title={item.title}
+          >
+            {item.subNav.map((variant, i) => {
+              return (
+                <Dropdown.Item key={i} onClick={() => navigate(variant.path, {state : {title: item.title, subTitle: variant.subTitle}})}>
+                  {variant.subTitle}
+                </Dropdown.Item>
+              );
+            })}
+          </DropdownButton>
+        </>
+      )}
     </li>
   );
 };

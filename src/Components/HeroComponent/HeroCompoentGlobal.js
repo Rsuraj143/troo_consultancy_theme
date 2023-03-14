@@ -1,9 +1,12 @@
 import cr from "../../Images/cr.png";
 import cr_2 from "../../Images/cr-2.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./HeroComponentGlobal.css"
 
 const HeroCompoentGlobal = () => {
+
+  const location = useLocation()
+  console.log(location.state);
   
     return (
       <div class="troo-da-sub-hero-section" id="troo-da-sub-hero-section">
@@ -17,7 +20,8 @@ const HeroCompoentGlobal = () => {
           <div class="row">
             <div class="col-md-12">
               <div class="sub-page-title">
-              <h2>About</h2>
+              <h2>{location?.state?.title}</h2>
+              <h2>{location?.state?.subTitle}</h2>
                 <ul class="breadcrumb">
                   <li>
                     <Link to="/">Home</Link>

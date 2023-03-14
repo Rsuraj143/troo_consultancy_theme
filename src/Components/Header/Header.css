@@ -2,6 +2,22 @@
   position: relative;
   z-index: 9;
 }
+
+.nav-link.test{
+  padding: 0 19.5px !important;
+}
+.navbar-nav .nav-link.active{
+  color: #FD7702 !important;
+}
+.nav-link.test button.btn.btn-primary{
+  background: transparent;
+  border-color: transparent;
+  margin-top: 0;
+  padding: 0;
+}
+.nav-link.test button.btn.btn-primary:hover{
+  color: #FD7702 ;
+}
 .container {
   max-width: 1240px !important;
   width: 100% !important;
@@ -109,6 +125,7 @@ a.nav-link {
   text-transform: uppercase;
   color: #ffffff;
   padding: 0 19.5px !important;
+  display: flex;
 }
 .nav-link {
   position: relative;
